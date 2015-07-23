@@ -1,4 +1,4 @@
-## These two function can be used to cache an inverse computation. You can then
+## These two function can be used to cache the inverse matrix for an invertible matrix. You can then
 ## look it up easily if needed
 
 ## makeCacheMatrix is used to create a list which contains a function that
