@@ -2,10 +2,10 @@
 ## look it up easily if needed
 
 ## makeCacheMatrix is used to create a list which contains a function that
-## 1) sets the value of the matrix
-## 2) gets the value of the matrix
-## 3) sets the value of the inverse
-## 4) gets the value of the inverse
+## 1) sets the value of the matrix - set
+## 2) gets the value of the matrix - get
+## 3) sets the value of the inverse - setinverse
+## 4) gets the value of the inverse - getinverse
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -49,7 +49,7 @@ cacheSolve <- function(x, ...) {
     return(inv)
   }
   ## If the cached value does not exists it will be computed here and then set
-  ## as the cached value usinf setinverse. Finally it will be printed for the
+  ## as the cached value using setinverse. Finally it will be printed for the
   ## user without a message
   data <- x$get()
   inv <- solve(data, ...)
